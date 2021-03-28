@@ -1,0 +1,185 @@
+body {
+  min-width: 470px;
+}
+
+.topnav a.active {
+  background-color: #fc7233;
+  color: white;
+}
+
+a.active:hover {
+  background-color: #e24a03;
+  color: white;
+}
+
+.container,
+.container-css,
+.container-mysql {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.darker {
+  background: linear-gradient(
+    90deg,
+    rgba(217, 217, 217, 1) 0%,
+    rgba(242, 242, 242, 1) 50%,
+    rgba(217, 217, 217, 1) 100%
+  );
+}
+
+.flex1 {
+  text-align: center;
+  position: relative;
+  flex: 1;
+  min-width: 350px;
+  min-height: 200px;
+  padding: 30px;
+  transition: none;
+}
+
+.flex2 {
+  flex: 1;
+  padding: 30px;
+  transition: none;
+}
+
+.flex1 div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.title {
+  color: #7d7d7d;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.description {
+  color: #7d7d7d;
+  font-size: 25px;
+}
+
+.example1 {
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  padding: 20px;
+  padding-bottom: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.example2 {
+  padding: 20px 20px 30px 20px;
+}
+
+.example2 div {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background: linear-gradient(
+    90deg,
+    rgba(217, 217, 217, 1) 0%,
+    rgba(242, 242, 242, 1) 50%,
+    rgba(217, 217, 217, 1) 100%
+  );
+}
+
+.example1 span,
+.example2 span {
+  display: block;
+}
+
+.example1 span,
+.example2 span {
+  color: #7d7d7d;
+  font-size: 20px;
+}
+
+.example1 div,
+.example2 div {
+  background-color: #d9d9d9;
+  border-left: 10px solid#fc7233;
+}
+
+xmp {
+  font-size: 15px;
+  margin-right: 10px;
+  margin-left: 20px;
+}
+
+.try-it {
+  text-decoration: none;
+  color: #d9d9d9;
+  padding: 10px 15px;
+  background-color: #fc7233;
+  font-size: 20px;
+}
+
+.try-it:hover {
+  background-color: #e24a03;
+}
+
+.buttons {
+  text-decoration: none;
+  color: #d9d9d9;
+  padding: 10px 15px;
+  background-color: #7d7d7d;
+  font-size: 20px;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.buttons:hover {
+  background-color: #616161;
+}
+
+.dark {
+  background-color: #d9d9d9;
+  display: flow-root;
+}
+
+@media screen and (max-width: 600px) {
+  .container,
+  .container-css,
+  .container-mysql {
+    width: 100%;
+  }
+
+  .description {
+    padding: 0 15px;
+    display: inline-block;
+  }
+
+  .topnav.responsive a.active {
+    background-color: #fc7233;
+  }
+
+  .topnav.responsive a.active:hover {
+    background-color: #e24a03;
+  }
+}
+
+@media screen and (max-width: 895px) {
+  .container-css .flex1 {
+    order: 1;
+  }
+
+  .container-css .flex2 {
+    order: 2;
+  }
+}
+
+@media screen and (max-width: 859px) {
+  .container-mysql .flex1 {
+    order: 1;
+  }
+
+  .container-mysql .flex2 {
+    order: 2;
+  }
+}

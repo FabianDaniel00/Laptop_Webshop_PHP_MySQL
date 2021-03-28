@@ -1,0 +1,4 @@
+AuthName "Protected Area"
+AuthType Basic
+AuthUserFile C:/xampp/htdocs/Fábián_Dániel-Szeminariumi_munka/secret/.htpasswd
+require valid-user
